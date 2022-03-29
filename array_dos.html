@@ -17,9 +17,49 @@
 <script>
     let frutas = ["naranja", "pera", "melon", "Sandia"]
 
-    alert(frutas.length)
-    console.log("El numero de elementos es:" + frutas.lenght)
+    // alert(frutas.length)
 
-    let datos = { nom: "Federico", ap: "Montagud", am: "Omedes" }
-    console.log(datos)
+
+    // let datos = { nom: "Federico", ap: "Montagud", am: "Omedes" }
+    // alert(datos.nom)
+
+    //frutas.forEach(function (elemento, index, array) {
+    // console.log("el elemento es: " + elemento)
+    // console.log("el índice es: " + index)
+    // console.log("el array es :" + array)
+    // console.log(index, elemento)
+    //})
+
+    // AGREGAR ELEMENTO AL FINAL 
+
+    let nuevoFinal = frutas.push("Piña")
+    let nuevoFinal2 = frutas.push("Fresa")
+
+    console.log("Se añadieron dos elementos")
+
+    //ELIMINAR ULTIMO ELEMENTO (fresa)
+
+    let eliminarUltimo = frutas.pop()
+
+    console.log("se eliminó fresa")
+
+
+    // AGREGAR AL PRINCIPIO
+
+    let agregarPrincipio = frutas.unshift("granada")
+
+    console.log("se añadió granada al principio")
+
+    //ELIMINAR EL PIMERO 
+
+    let eliminarPrimero = frutas.shift()
+
+    console.log("se eliminó granada al principio ")
+
+    frutas.forEach(function (elemento, index, array) {
+        console.log(index, elemento)
+
+    })
+
+
 </script>
